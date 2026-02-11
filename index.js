@@ -139,16 +139,16 @@ function change() {
     '<i class="fa-solid fa-quote-left"></i>' +
     " " +
     " " +
-    quotes[r].caption +
+    quotes[index].caption +
     " " +
     " " +
     '<i class="fa-solid fa-quote-right"></i>' ;
 
   document.getElementById("auther").innerHTML = quotes[r].auther;
-  console.log(r);
-  used.push(r);
-  console.log(used);
+
+
 }
+
 
 
 
