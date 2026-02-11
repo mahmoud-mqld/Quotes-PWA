@@ -129,7 +129,7 @@ function change() {
     used = [];
   }
   do {
-    var r = Math.floor(Math.random() * quotes.length);
+    var r =+1;
   } while (used.includes(r));
 
   document.getElementById("caption").innerHTML =
@@ -146,6 +146,7 @@ function change() {
   used.push(r);
   console.log(used);
 }
+
 
 
 
