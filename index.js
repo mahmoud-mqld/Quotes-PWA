@@ -133,7 +133,8 @@ function change() {
   if (index >= quotes.length) {
     index = 0;
   }
-};
+}
+{
   document.getElementById("caption").innerHTML =
     '<i class="fa-solid fa-quote-left"></i>' +
     " " +
