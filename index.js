@@ -120,34 +120,34 @@ var quotes = [
 
    { caption: "سُبْحـانَ اللهِ وَبِحَمْـدِهِ.   " ,auther :"حُطَّتْ خَطَايَاهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ. لَمْ يَأْتِ أَحَدٌ يَوْمَ الْقِيَامَةِ بِأَفْضَلَ مِمَّا جَاءَ بِهِ إِلَّا أَحَدٌ قَالَ مِثْلَ مَا قَالَ أَوْ زَادَ عَلَيْهِ.مائة مرة "}
 ];
-let index = 0;
+let used = [];
 
 function change() {
-  // Display current quote
-  document.getElementById("quote").innerText = quotes[index];
+ // var max = quotes.length - 1;
 
-  // Move to next index
-  index++;
-
-  // If we reach the end, start over
-  if (index >= quotes.length) {
-    index = 0;
+  if (used.length == quotes.length) {
+    used = [];
   }
-}
-{
+  do {
+    var r =0;
+  } while (used.includes(r));
+
   document.getElementById("caption").innerHTML =
     '<i class="fa-solid fa-quote-left"></i>' +
     " " +
     " " +
-    quotes[index].caption +
+    quotes[r].caption +
     " " +
     " " +
     '<i class="fa-solid fa-quote-right"></i>' ;
 
   document.getElementById("auther").innerHTML = quotes[r].auther;
-
-
+  console.log(r);
+  used.push(r);
+  console.log(used);
+  r++ ;
 }
+
 
 
 
