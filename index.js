@@ -129,7 +129,7 @@ function change() {
     used = [];
   }
   do {
-    var r+= 1;
+    var r=+ 1;
   } while (used.includes(r));
 
   document.getElementById("caption").innerHTML =
